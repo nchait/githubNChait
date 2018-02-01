@@ -1,0 +1,26 @@
+.image { 
+    position: relative; 
+    overflow:hidden;
+    height: 650px;
+ }
+ h2 { 
+    position: absolute; 
+    top: -10px; 
+    left: 0; 
+    width: 100%;
+    color: #B1BDCE;
+}
+ .set-height{
+     margin-top: -50px;
+     height:850px;
+ }
+ 
+.pic{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 250px;
+    border-radius:50%;
+    border:10px solid #B1BDCE;
+    margin-top: 150px;
+}

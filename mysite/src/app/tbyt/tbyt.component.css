@@ -1,0 +1,59 @@
+.sub{
+    background-color: #0043A3;
+    color: #fff;   
+    width: 100%;
+    height: 585px
+}
+@media screen and (max-width: 768px) {
+    .tboxa{
+        float: left;
+        background-color: #334154fd;
+        color: #fff;   
+        width: 100%;
+    }
+    .tboxb{
+        float: left;
+        background-color: rgb(128, 138, 153);
+        color: #000;
+        width: 100%;
+    }
+    .tboxc{
+        float: left;
+        background-color: rgb(128, 138, 153);
+        color: #000;
+        width: 100%;
+    }
+    .tboxd{
+        float: left;
+        background-color: #334154fd;
+        color: #fff;   
+        width: 100%;
+    }
+
+}
+@media screen and (min-width: 768px) {
+    .tboxa{
+        float: left;
+        background-color: #334154fd;
+        color: #fff;   
+        width: 50%;
+    }
+    .tboxb{
+        float: left;
+        background-color: rgb(128, 138, 153);
+        color: #000;
+        width: 50%;
+    }
+    .tboxc{
+        float: left;
+        background-color: #334154fd;
+        color: #fff;   
+        width: 50%;
+    }
+    .tboxd{
+        float: left;
+        background-color: rgb(128, 138, 153);
+        color: #000;
+        width: 50%;
+    }
+}

@@ -1,0 +1,53 @@
+
+.pic{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 250px;
+    border-radius:50%;
+    border:10px solid #B1BDCE;
+    margin-top: 150px;
+}
+.outer-frame {
+    min-height: 200px;
+    text-align: center; 
+  }
+  .full-width-div {
+    position: absolute;
+    width: 100%;
+    left: 0;
+}
+  .wrapper{
+    line-height: 200px;
+    border-radius: 20px;
+    margin: 50px
+  }
+  .light{
+    color: #B1BDCE;
+  }
+  .img {
+    vertical-align: middle;
+  }
+  .fil{
+    height:500px;
+  }
+  .stars {
+    position: fixed;
+    margin-left: auto;
+    margin-right: auto;
+    height: 720px;
+    z-index: -10;
+    overflow: hidden;
+  }
+  .second{
+    background-color: rgba(240, 248, 255, 0.651);
+    width: 100%;
+    height: 500px;
+    padding: 0px;
+}
+.third{
+    background-color: rgb(43, 102, 153);
+    width: 100%;
+    height: 500px;
+    padding: 0px;
+}

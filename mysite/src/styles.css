@@ -1,0 +1,62 @@
+/* You can add global styles to this file, and also import other style files */
+.img-main-carousel{
+    margin: 0 auto;
+    width: 100%;
+}
+.carousel-control.right, .carousel-control.left{
+    cursor: pointer;
+} 
+.rounded{
+    border-radius: 50%;
+
+}
+.rowLg{
+    height: 740px;
+}
+.rowSm{
+    height: 220px;
+}
+@media screen and (max-width: 1200px) and (min-width: 0px) {
+    .myClass{
+        display: none;
+    }
+ }
+ @media screen and (max-width: 2000px) and (min-width: 1200px) {
+    .middleClass{
+        display: none;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 2000px) {
+    .lowerClass{
+        display: none;
+    }
+}
+ul.nav-pills {
+    top: 70px;
+    position: fixed;
+}
+.container{
+    margin: 0px auto;
+}
+#section1 {color: #fff; background-color: #011A4F;}
+#section2 {color: #fff; background-color: #673ab7;}
+#section3 {color: #fff; background-color: #ff9800;}
+#section41 {color: #fff; background-color: #00bcd4;}
+#section42 {color: #fff; background-color: #009688;}
+@media screen and (max-width: 810px) {
+    #section1, #section2, #section3, #section41, #section42  {
+        margin-left: 150px;
+    }
+  }
+  body {
+    background-color: #88A4E2;
+}
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
+    color: #fff;
+    background-color: #808A99;
+}
+.bigRow{
+    width: 100%;
+    min-height: 500px;
+    padding: 0px;
+}
