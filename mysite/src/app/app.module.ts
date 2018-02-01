@@ -25,9 +25,11 @@ import { ResumeComponent } from './rows/professional/resume/resume.component';
 const appRoutes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'professional', component: ProfessionalComponent },
-  { path: 'stars', component: StarsComponent },
-  { path: 'pic', component: PictureComponent },
-  { path: 'picc', component: PractiseComponent }
+  { path: '', redirectTo: 'home', pathMatch: 'full'},
+  { path: '**', redirectTo: 'home', pathMatch: 'full'}
+//  { path: 'stars', component: StarsComponent },
+///  { path: 'pic', component: PictureComponent },
+//  { path: 'picc', component: PractiseComponent }
 ];
 
 @NgModule({
