@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { CarouselComponent } from './carousel/carousel.component';
 import { CarouselModule } from 'ngx-bootstrap/carousel';
+import { TabsModule } from 'ngx-bootstrap/tabs';
 import { TbytComponent } from './tbyt/tbyt.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { StarsComponent } from './random/stars/stars.component';
@@ -21,6 +22,9 @@ import { KnowroamingComponent } from './rows/professional/knowroaming/knowroamin
 import { FirepowerComponent } from './rows/professional/firepower/firepower.component';
 import { LastcallComponent } from './rows/professional/lastcall/lastcall.component';
 import { ResumeComponent } from './rows/professional/resume/resume.component';
+import { HomeOneComponent } from './rows/home-one/home-one.component';
+import { ButtonsModule } from 'ngx-bootstrap/buttons';
+import { TripletButComponent } from './rows/triplet-but/triplet-but.component';
 
 const appRoutes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -51,14 +55,16 @@ const appRoutes: Routes = [
     KnowroamingComponent,
     FirepowerComponent,
     LastcallComponent,
-    ResumeComponent
+    ResumeComponent,
+    HomeOneComponent,
+    TripletButComponent
   ],
   imports: [
-    RouterModule.forRoot(
-      appRoutes
-    ),
+    RouterModule.forRoot(appRoutes),
+    ButtonsModule.forRoot(),
     BrowserModule,
-    CarouselModule.forRoot()
+    CarouselModule.forRoot(),
+    TabsModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

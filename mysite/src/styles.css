@@ -16,6 +16,16 @@
 .rowSm{
     height: 220px;
 }
+@media screen and (max-width: 767px) {
+    .pre-collapse{
+        display: none;
+    }
+ }
+@media screen and (min-width: 767px) {
+    .post-collapse{
+        display: none;
+    }
+ }
 @media screen and (max-width: 1200px) and (min-width: 0px) {
     .myClass{
         display: none;

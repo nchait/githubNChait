@@ -12,9 +12,13 @@
 }
  .set-height{
      margin-top: -50px;
-     height:850px;
+     min-height:850px;
  }
- 
+ @media screen and (min-width: 1000px) {
+    .set-height{
+        width:100%;
+    }
+ }
 .pic{
     display: block;
     margin-left: auto;

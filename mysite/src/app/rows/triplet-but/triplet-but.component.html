@@ -1,0 +1,100 @@
+<div class="container-fluid min-size pre-collapse">
+    <div class="row">
+      <div class="col-md-1"></div>
+      <div class="col-md-10 col-sm-12">  
+        <div class="col-sm-4 text-center">
+          <img src="assets/images/personal/me.jpg" style="width:75%; padding-top:30px;"> <br>
+          <h3> Business<br>Acumen</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ex ante, placerat tempor enim vel, semper facilisis leo. Nunc et turpis nec quam fermentum ornare. Etiam porttitor quam ac nulla rutrum.          
+          </p>
+        </div>
+        <div class="col-sm-4 text-center">
+          <img src="assets/images/personal/me.jpg" style="width:75%; padding-top:30px;"> <br>
+          <h3> Business<br>Acumen</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ex ante, placerat tempor enim vel, semper facilisis leo. Nunc et turpis nec quam fermentum ornare. Etiam porttitor quam ac nulla rutrum.          
+          </p>
+        </div>
+        <div class="col-sm-4 text-center">
+          <img src="assets/images/personal/me.jpg" style="width:75%; padding-top:30px;"> <br>
+          <h3> Business<br>Acumen</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ex ante, placerat tempor enim vel, semper facilisis leo. Nunc et turpis nec quam fermentum ornare. Etiam porttitor quam ac nulla rutrum.          
+          </p>
+        </div> 
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid min-size post-collapse">
+      <div class="row">
+        <div class="col-xs-12 text-center" style="padding-top: 25px;">
+            <div class="btn-group-md">
+              <label class="btn btn-primary" (click)="setVal(1)">Business<br>Acumen</label>
+              <label class="btn btn-primary" (click)="setVal(2)">Software<br>Development</label>
+              <label class="btn btn-primary" (click)="setVal(3)">Extra<br>Curriculars</label>
+            </div>
+        </div>  
+        <div class="col-xs-2"></div>
+        <div class="col-xs-8 text-center">
+          <div [ngSwitch]="value">
+            <div *ngSwitchDefault>
+              <img src="assets/images/personal/me.jpg" style="width:50%; padding-top:30px;"> <br>
+              <h3>Business<br>Acumen</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ex ante, placerat tempor enim vel, semper facilisis leo. Nunc et turpis nec quam fermentum ornare. Etiam porttitor quam ac nulla rutrum.          
+              </p>
+            </div>
+            <div *ngSwitchCase="1">
+              <img src="assets/images/personal/me.jpg" style="width:50%; padding-top:30px;"> <br>
+              <h3>Business<br>Acumen</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ex ante, placerat tempor enim vel, semper facilisis leo. Nunc et turpis nec quam fermentum ornare. Etiam porttitor quam ac nulla rutrum.          
+              </p>
+            </div>
+            <div *ngSwitchCase="2">
+              <img src="assets/images/personal/me.jpg" style="width:50%; padding-top:30px;"> <br>
+              <h3>Software<br>Development</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ex ante, placerat tempor enim vel, semper facilisis leo. Nunc et turpis nec quam fermentum ornare. Etiam porttitor quam ac nulla rutrum.          
+              </p>
+            </div>
+            <div *ngSwitchCase="3">
+              <img src="assets/images/personal/me.jpg" style="width:50%; padding-top:30px;"> <br>
+              <h3>Extra<br>Curriculars</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ex ante, placerat tempor enim vel, semper facilisis leo. Nunc et turpis nec quam fermentum ornare. Etiam porttitor quam ac nulla rutrum.          
+              </p>
+            </div>
+          </div> 
+        </div>
+      </div>
+    </div>
+    
+  <!--
+  <div class="container-fluid">
+    <div class="row">
+        <button (click)="show = !show">{{show ? 'hide' : 'show'}}</button>
+        show = {{show}}
+        <br>
+        <div *ngIf="show; else elseBlock">Text to show</div>
+        <ng-template #elseBlock>Alternate text while primary text is hidden</ng-template>  
+      </div>
+  </div>
+  
+  <div class="container-fluid">
+    <div class="row">
+        <div class="card">
+          <img src="img.jpg" alt="John" style="width:100%">
+          <h1>John Doe</h1>
+          <p class="title">CEO & Founder, Example</p>
+          <p>Harvard University</p>
+          <a href="#"><i class="fa fa-dribbble"></i></a> 
+          <a href="#"><i class="fa fa-twitter"></i></a> 
+          <a href="#"><i class="fa fa-linkedin"></i></a> 
+          <a href="#"><i class="fa fa-facebook"></i></a> 
+          <p><button>Contact</button></p>
+        </div>
+    </div>
+  </div>
+  -->

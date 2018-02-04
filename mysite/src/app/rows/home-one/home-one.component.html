@@ -1,0 +1,96 @@
+<div class="container-fluid min-size pre-collapse">
+  <div class="row">
+    <div class="col-lg-2 col-sm-1"></div>
+    <div class="col-lg-8 col-sm-10">  
+      <div class="col-sm-12">
+        <div class="col-sm-6 col-md-5 text-center">
+          <img src="https://png.icons8.com/metro/1600/business.png" style="width:75%; padding-top:30px;"> <br>
+        </div>
+        <div class="col-md-2 text-center"></div>
+        <div class="col-sm-6 col-md-5 text-center">
+          <img src="http://cdn.onlinewebfonts.com/svg/img_414428.png" style="width:75%; padding-top:30px; margin-top:30px;"> <br>
+        </div> 
+      </div>  
+      <div class="col-sm-12">
+        <div class="col-sm-6 col-md-5 text-center">
+          <h3>Business Acumen</h3>
+          <p>
+            {{ bus }}
+          </p>
+        </div>
+        <div class="col-md-2 text-center">      </div>
+        <div class="col-sm-6 col-md-5 text-center">
+          <h3>Software Development</h3>
+          <p>
+            {{ sof }}
+          </p>
+        </div> 
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container-fluid min-size post-collapse">
+  <div class="row">
+    <div [ngSwitch]="value">
+      <div *ngSwitchCase="1">
+        <div class="col-xs-12 text-center" style="padding-top: 15px;">
+          <div class="btn-group-md">
+            <label class="btn btn-default active" (click)="setVal(1)" style="border-width:0px;">Business<br>Acumen</label>
+            <label class="btn btn-default" (click)="setVal(2)" style="border-width:0px;">Software<br>Development</label>
+          </div>
+        </div>  
+        <div class="col-xs-1"></div>
+        <div class="col-xs-10 text-center">
+          <img src="https://png.icons8.com/metro/1600/business.png" style="width:40%; padding-top:-30px; margin-top:40px;"> <br>
+          <h3>Business Acumen</h3>
+          <p>
+            {{ bus }}
+          </p>
+        </div>
+      </div>
+      <div *ngSwitchCase="2">
+        <div class="col-xs-12 text-center" style="padding-top: 25px;">
+          <div class="btn-group-md">
+            <label class="btn btn-default" (click)="setVal(1)" style="border-width:0px;">Business<br>Acumen</label>
+            <label class="btn btn-default active" (click)="setVal(2)" style="border-width:0px;">Software<br>Development</label>
+          </div>
+        </div>  
+        <div class="col-xs-1"></div>
+        <div class="col-xs-10 text-center">    
+          <img src="http://cdn.onlinewebfonts.com/svg/img_414428.png" style="width:50%; padding-top:30px;"> <br>
+          <h3>Software Development</h3>
+          <p>
+            {{ sof }}
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--
+<div class="container-fluid">
+  <div class="row">
+      <button (click)="show = !show">{{show ? 'hide' : 'show'}}</button>
+      show = {{show}}
+      <br>
+      <div *ngIf="show; else elseBlock">Text to show</div>
+      <ng-template #elseBlock>Alternate text while primary text is hidden</ng-template>  
+    </div>
+</div>
+
+<div class="container-fluid">
+  <div class="row">
+      <div class="card">
+        <img src="img.jpg" alt="John" style="width:100%">
+        <h1>John Doe</h1>
+        <p class="title">CEO & Founder, Example</p>
+        <p>Harvard University</p>
+        <a href="#"><i class="fa fa-dribbble"></i></a> 
+        <a href="#"><i class="fa fa-twitter"></i></a> 
+        <a href="#"><i class="fa fa-linkedin"></i></a> 
+        <a href="#"><i class="fa fa-facebook"></i></a> 
+        <p><button>Contact</button></p>
+      </div>
+  </div>
+</div>
+-->
