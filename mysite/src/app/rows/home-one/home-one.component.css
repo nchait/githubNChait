@@ -3,43 +3,6 @@
     color:  black;
     background-color: white;
 }
-.tablink {
-    background-color: #555;
-    color: white;
-    float: left;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    padding: 14px 16px;
-    font-size: 17px;
-    width: 25%;
-}
-
-/* Change background color of buttons on hover */
-.tablink:hover {
-    background-color: #777;
-}
-
-/* Set default styles for tab content */
-.tabcontent {
-    color: white;
-    display: none;
-    padding: 50px;
-    text-align: center;
-}
-
-/* Style each tab content individually */ 
-#London {background-color:red;}
-#Paris {background-color:green;}
-#Tokyo {background-color:blue;}
-#Oslo {background-color:orange;}
-
-.card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    max-width: 300px;
-    margin: auto;
-    text-align: center;
-}
 
 .title {
     color: grey;
@@ -68,13 +31,3 @@ a {
 button:hover, a:hover {
     opacity: 0.7;
 }
-@media screen and (max-width: 767px) {
-    .pre-collapse{
-        display: none;
-    }
- }
-@media screen and (min-width: 767px) {
-    .post-collapse{
-        display: none;
-    }
- }

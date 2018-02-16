@@ -1,24 +1,3 @@
-@media screen and (max-width: 767px) {
-    .pre-collapse{
-        display: none;
-    }
- }
-@media screen and (min-width: 767px) {
-    .post-collapse{
-        display: none;
-    }
- }
-
-
-
-
-
-
-
-
- 
-
-
 #info
 {
 	font-size: 18px;
@@ -38,7 +17,7 @@ a{
 	height: 300px;
 	width: 100%;
 	background: #F5F5F5;
-	overflow-y: scroll;
+	overflow-y: auto;
 	margin-bottom: 25px;
 }
 

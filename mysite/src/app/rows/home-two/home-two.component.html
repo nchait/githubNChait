@@ -11,7 +11,7 @@
         <h3>Sales Associate</h3>
         <h5>July - August 2017</h5>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ex ante, placerat tempor enim vel, semper facilisis leo. Nunc et turpis nec quam fermentum ornare. Etiam porttitor quam ac nulla rutrum, euismod ullamcorper lectus finibus. Ut lectus velit, feugiat at ornare sit amet,
+          {{last}}
         </p>
       </div>
       <div class="col-sm-4 text-center">
@@ -21,7 +21,7 @@
         <h3>Junior Analyst</h3>
         <h5>May - June 2017</h5>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ex ante, placerat tempor enim vel, semper facilisis leo. Nunc et turpis nec quam fermentum ornare. Etiam porttitor quam ac nulla rutrum, euismod ullamcorper lectus finibus. Ut lectus velit, feugiat at ornare sit amet,
+          {{fire}}
         </p>
       </div>
       <div class="col-sm-4 text-center">
@@ -31,7 +31,7 @@
         <h3>Quality Assurance</h3>
         <h5>June - August 2015</h5>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ex ante, placerat tempor enim vel, semper facilisis leo. Nunc et turpis nec quam fermentum ornare. Etiam porttitor quam ac nulla rutrum, euismod ullamcorper lectus finibus. Ut lectus velit, feugiat at ornare sit amet,
+          {{know}}
         </p>
       </div> 
       <div class="col-sm-12 text-right">
@@ -46,12 +46,76 @@
     </div>
   </div>
 </div>
-<div class="container-fluid min-size post-collapse">
-  <div class="row">
 
+
+
+
+
+<div class="container-fluid post-collapse">
+  <div class="row">
+    <div class="text-right bottom-text">
+      <a routerLink="/professional">
+        <h6 style="color:white;margin:0;">
+          <i>
+            <div style="padding-right:20px">
+              Click to 
+            </div>  
+            see more...
+          </i>
+        </h6>
+      </a>
+    </div>
+    <carousel [interval]="myInterval" class = "text-center" >
+      <slide class="min-size">
+        <div class="col-sm-12 text-center" style="padding-top: 15px">
+          <h1><strong>Professional Experience</strong></h1>
+        </div>
+        <div class="col-sm-4 text-center" style="padding-top:15px">
+          <a routerLink="/professional">
+            <img src="assets/images/personal/lastcall.png" style="width:100%;"> <br>
+          </a>
+          <h3>Sales Associate</h3>
+          <h5>July - August 2017</h5>
+          <p>
+            {{last}}
+          </p>
+        </div>
+      </slide>
+      <slide class="min-size">
+        <div class="col-sm-12 text-center" style="padding-top: 15px">
+          <h1><strong>Professional Experience</strong></h1>
+        </div>
+        <div class="col-sm-4 text-center" style="padding-top:15px">
+          <a routerLink="/professional">
+            <img src="assets/images/personal/firepower.png" style="width:100%;"> <br>
+          </a>
+          <h3>Junior Analyst</h3>
+          <h5>May - June 2017</h5>
+          <p>
+            {{fire}}
+          </p>
+        </div>
+      </slide>
+      <slide class="min-size">
+        <div class="col-sm-12 text-center" style="padding-top: 15px">
+          <h1><strong>Professional Experience</strong></h1>
+        </div>
+        <div class="col-sm-4 text-center" style="padding-top:15px">
+          <a routerLink="/professional">
+            <img src="assets/images/personal/knowroaming.png" style="width:100%;"> <br>
+          </a>
+          <h3>Quality Assurance</h3>
+          <h5>June - August 2015</h5>
+          <p>
+            {{know}}
+          </p>
+        </div>
+      </slide>
+    </carousel>
   </div>
 </div>
-<!--<div class="container-fluid">
+
+<!--<div class="container-fluid post-collapse">
   <div class="row">
     <carousel [interval]="myInterval" class = "text-center" >
       <slide class="min-size">

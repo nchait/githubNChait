@@ -7,13 +7,9 @@
     padding-top:25px;
     padding-bottom:25px;
 }
-@media screen and (max-width: 767px) {
-    .pre-collapse{
-        display: none;
-    }
- }
-@media screen and (min-width: 767px) {
-    .post-collapse{
-        display: none;
-    }
- }
+.bottom-text{
+    z-index: 10;
+    margin-top: 455px;
+    position: absolute;
+    right:30px;
+}

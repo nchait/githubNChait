@@ -16,12 +16,12 @@
 .rowSm{
     height: 220px;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
     .pre-collapse{
         display: none;
     }
  }
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 768px) {
     .post-collapse{
         display: none;
     }
